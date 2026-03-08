@@ -4,11 +4,11 @@ export function JsonLd() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Damilare Osofisan",
+    name: "Llewellyn Fisher",
     url: "https://damilareoo.xyz",
     image: "https://damilareoo.xyz/api/og-image",
     jobTitle: "Designer & Developer",
-    description: "Portfolio of Damilare Osofisan, a designer and developer creating digital experiences.",
+    description: "Portfolio of Llewellyn Fisher, a designer and developer creating digital experiences.",
     sameAs: [
       "https://linkedin.com/in/damilareoo",
       "https://github.com/damilareoo",

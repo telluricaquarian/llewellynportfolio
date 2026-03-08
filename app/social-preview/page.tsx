@@ -26,9 +26,9 @@ export default function SocialPreviewPage() {
                   <div className="max-w-md mx-auto bg-white rounded-md shadow-sm overflow-hidden">
                     <div className="p-4">
                       <p className="text-sm font-medium text-gray-900">damilareoo.xyz</p>
-                      <h4 className="text-base font-semibold mt-1">Damilare Osofisan | Designer & Developer</h4>
+                      <h4 className="text-base font-semibold mt-1">Llewellyn Fisher | Designer & Developer</h4>
                       <p className="text-sm text-gray-500 mt-1">
-                        Portfolio of Damilare Osofisan, a designer and developer creating digital experiences.
+                        Portfolio of Llewellyn Fisher, a designer and developer creating digital experiences.
                       </p>
                     </div>
                     <img src="/images/og-image.png" alt="Facebook Preview" className="w-full h-auto" />
@@ -43,9 +43,9 @@ export default function SocialPreviewPage() {
                   <div className="max-w-md mx-auto bg-white rounded-md shadow-sm overflow-hidden">
                     <img src="/images/og-image.png" alt="Twitter Preview" className="w-full h-auto" />
                     <div className="p-4">
-                      <h4 className="text-base font-semibold">Damilare Osofisan | Designer & Developer</h4>
+                      <h4 className="text-base font-semibold">Llewellyn Fisher | Designer & Developer</h4>
                       <p className="text-sm text-gray-500 mt-1">
-                        Portfolio of Damilare Osofisan, a designer and developer creating digital experiences.
+                        Portfolio of Llewellyn Fisher, a designer and developer creating digital experiences.
                       </p>
                       <p className="text-xs text-gray-400 mt-2">damilareoo.xyz</p>
                     </div>
@@ -61,9 +61,9 @@ export default function SocialPreviewPage() {
                     <img src="/images/og-image.png" alt="LinkedIn Preview" className="w-full h-auto" />
                     <div className="p-4">
                       <p className="text-xs text-gray-500">damilareoo.xyz</p>
-                      <h4 className="text-base font-semibold mt-1">Damilare Osofisan | Designer & Developer</h4>
+                      <h4 className="text-base font-semibold mt-1">Llewellyn Fisher | Designer & Developer</h4>
                       <p className="text-sm text-gray-500 mt-1">
-                        Portfolio of Damilare Osofisan, a designer and developer creating digital experiences.
+                        Portfolio of Llewellyn Fisher, a designer and developer creating digital experiences.
                       </p>
                     </div>
                   </div>
