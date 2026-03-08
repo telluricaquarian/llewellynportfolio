@@ -10,7 +10,7 @@ export function FeaturedProject() {
       id: "areculateir",
       title: "Areculateir",
       funding: null,
-      image: "/images/wormhole.png",
+      image: "/images/areculateir.png",
       alt: "Areculateir - Brand and systems studio",
       description: "Areculateir is a brand and systems studio focused on building websites, agentic workflows, and productized digital infrastructure. The work spans identity, architecture, and execution—from zero to shipped.",
       sections: [
