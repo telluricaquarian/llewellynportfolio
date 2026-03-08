@@ -6,49 +6,39 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 0,
-    title: "SmallChess",
-    description: "Chess ecosystem",
-    link: "https://small-chess.vercel.app/",
+    title: "Agentic Workflow Builder",
+    description: "Automated multi-step agent pipeline",
+    link: "#",
   },
   {
     id: 1,
-    title: "Trieuth Capital",
-    description: "Brand, web design and dev",
-    link: "https://trieuthcapital.com",
+    title: "Portfolio Design System",
+    description: "Component library and visual language",
+    link: "#",
   },
-
+  {
+    id: 2,
+    title: "Brand Concept Explorer",
+    description: "Identity and mark exploration",
+    link: "#",
+  },
   {
     id: 3,
-    title: "Reveriee",
-    description: "Interactive quotes",
-    link: "https://chord-gig-63118351.figma.site",
+    title: "Web Interaction Lab",
+    description: "Motion and interface experiments",
+    link: "#",
   },
   {
     id: 4,
-    title: "Dithering Background",
-    description: "Generative shader design",
-    link: "https://v0-shader-component-generation.vercel.app/",
+    title: "Product Demo Scaffold",
+    description: "Rapid prototype framework",
+    link: "#",
   },
   {
     id: 5,
-    title: "Image to ASCII",
-    description: "Fork of",
-    link: "https://v0-test-mu-eight-72.vercel.app/",
-    credit: { name: "Rauch", url: "https://x.com/rauchg" },
-  },
-  {
-    id: 6,
-    title: "Pixel Soccer",
-    description: "Interactive pixel art game",
-    link: "https://pixel-soccer.vercel.app",
-    tag: "game",
-  },
-  {
-    id: 7,
-    title: "Caged Bird",
-    description: "Puzzle game experience",
-    link: "https://cagedbird.vercel.app",
-    tag: "game",
+    title: "AI Tooling Sandbox",
+    description: "LLM integration experiments",
+    link: "#",
   },
 ]
 
@@ -126,11 +116,6 @@ export function WorkSection() {
                       <span className="text-lg md:text-xl lg:text-2xl font-normal text-[#fafafa] group-hover:text-white transition-colors duration-300 flex-shrink-0">
                         {project.title}
                       </span>
-                      {project.tag && (
-                        <span className="text-mono text-[#525252] text-xs md:text-sm flex-shrink-0">
-                          [{project.tag}]
-                        </span>
-                      )}
                       <ArrowUpRight className="w-4 h-4 md:w-4 md:h-4 text-[#525252] group-hover:text-[#fafafa] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 flex-shrink-0" />
                     </div>
 
@@ -138,21 +123,6 @@ export function WorkSection() {
                       <span className="text-sm md:text-base text-[#737373] group-hover:text-[#a1a1a1] transition-colors duration-300">
                         {project.description}
                       </span>
-                      {project.credit && (
-                        <span className="text-xs md:text-sm">
-                          <span
-                            onClick={(e) => {
-                              e.preventDefault()
-                              e.stopPropagation()
-                              window.open(project.credit.url, "_blank")
-                            }}
-                            className="text-[#737373] hover:text-[#fafafa] underline underline-offset-2 decoration-[#525252] hover:decoration-[#fafafa] transition-colors cursor-pointer"
-                          >
-                            {project.credit.name}
-                          </span>
-                          <span className="text-[#737373]">'s original</span>
-                        </span>
-                      )}
                     </div>
                   </a>
                 </div>

@@ -24,15 +24,7 @@ export function Footer() {
           onMouseLeave={() => setShowSpotifyEmbed(false)}
         >
           <p className="text-[#a1a1a1] text-xs sm:text-sm flex items-center gap-1.5 sm:gap-2 md:gap-2.5 flex-wrap justify-center leading-relaxed">
-            <span className="whitespace-nowrap">Built with love and music by</span>
-            <a
-              href="https://x.com/damilareoo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[#fafafa] hover:text-[#a1a1a1] transition-colors underline decoration-[#404040] hover:decoration-[#fafafa] flex-shrink-0"
-            >
-              Damilare
-            </a>
+            <span className="whitespace-nowrap">Built with love and music by Llewellyn Fisher</span>
 
             {/* Spotify icon with embed */}
             <span className="relative inline-flex items-center cursor-pointer">

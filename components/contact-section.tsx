@@ -5,14 +5,14 @@ import { useState } from "react"
 import { ArrowUpRight, Copy, Check } from "lucide-react"
 
 const links = [
-  { label: "Email", value: "dosofisan7@gmail.com", href: "mailto:dosofisan7@gmail.com", copyable: true },
-  { label: "X", value: "@damilareoo", href: "https://x.com/damilareoo" },
-  { label: "GitHub", value: "damilareoo", href: "https://github.com/damilareoo" },
-  { label: "LinkedIn", value: "damilareoo", href: "https://linkedin.com/in/damilareoo" },
-  { label: "v0", value: "@damilareoo", href: "https://v0.app/@damilareoo" },
-  { label: "Layers", value: "damilareoo", href: "https://layers.to/damilareoo" },
-  { label: "Substack", value: "@damilareoo", href: "https://substack.com/@damilareoo" },
-  { label: "Contra", value: "damilareoo", href: "https://contra.com/damilareoo" },
+  { label: "Email", value: "[email placeholder]", href: "#", copyable: true },
+  { label: "X", value: "@[handle]", href: "#" },
+  { label: "GitHub", value: "[username]", href: "#" },
+  { label: "LinkedIn", value: "llewellyn-fisher", href: "#" },
+  { label: "Areculateir", value: "areculateir.com", href: "#" },
+  { label: "Ideation Station", value: "[link placeholder]", href: "#" },
+  { label: "Avantesavante", value: "[link placeholder]", href: "#" },
+  { label: "Enagic", value: "[link placeholder]", href: "#" },
 ]
 
 export function ContactSection() {
@@ -20,7 +20,7 @@ export function ContactSection() {
   const [showSpotifyEmbed, setShowSpotifyEmbed] = useState(false)
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("dosofisan7@gmail.com")
+    navigator.clipboard.writeText("[email placeholder]")
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
   }

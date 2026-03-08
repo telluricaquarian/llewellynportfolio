@@ -7,61 +7,107 @@ import Image from "next/image"
 export function FeaturedProject() {
   const projects = [
     {
-      id: "sylvan",
-      title: "Sylvan",
+      id: "areculateir",
+      title: "Areculateir",
       funding: null,
-      image: "/images/sylvan-featured.gif",
-      alt: "Sylvan - Revenue intelligence platform",
-      description: "Sylvan helps teams understand what actually drives revenue by making customer data simple to read. Most analytics tools bury you in reports and slow dashboards. Sylvan cuts through that.",
+      image: "/images/wormhole.png",
+      alt: "Areculateir - Brand and systems studio",
+      description: "Areculateir is a brand and systems studio focused on building websites, agentic workflows, and productized digital infrastructure. The work spans identity, architecture, and execution—from zero to shipped.",
       sections: [
         {
-          title: "The Challenge",
-          content: "Revenue teams need to spot the small changes in customer behavior that matter. The problem is most platforms make this harder, not easier. We needed to build an identity that felt like the opposite of cluttered analytics tools.",
+          title: "The Focus",
+          content: "Most studios separate design from development. Areculateir treats them as the same problem. Every engagement starts with understanding what the system needs to do, then building the identity and infrastructure that make it work.",
         },
         {
-          title: "What We Built",
-          content: "We created the signal mark—a visual system that shows how customer actions create patterns over time. It shifts and adapts, kind of like how real opportunities appear in customer journeys. The mark became the core of Sylvan's identity.",
+          title: "What We Build",
+          content: "Websites, brand systems, agentic workflow tooling, and digital products. Built to be maintainable, extensible, and visually credible from day one.",
         },
         {
           title: "The Approach",
-          content: "Keep it simple but make it mean something. The identity had to communicate clarity without feeling cold or technical. Every piece of the system reinforces the idea that Sylvan turns noise into signal.",
+          content: "Minimal surface area, maximum clarity. Every output is designed to communicate competence and earn trust without requiring explanation.",
         },
       ],
-      role: "Brand Design, Logo Design, Web Design, Visual System",
+      role: "Founder, Design & Development",
       links: [
-        { text: "Website", url: "https://sylvanlabs.com" },
+        { text: "Areculateir", url: "#" },
       ],
     },
     {
-      id: "chessever",
-      title: "ChessEver",
+      id: "ideation-station",
+      title: "Ideation Station",
       funding: null,
-      image: "/images/chessever-featured.png",
-      alt: "ChessEver - Real-time chess tournament tracking",
-      description: "ChessEver is a mobile app that lets you follow professional chess tournaments and players in real time. With FollowChess gone, there was no simple way to track live games, standings, and player stats in one place. We built ChessEver to bring that back.",
+      image: "/images/sylvan-featured.gif",
+      alt: "Ideation Station - Concept and experimentation environment",
+      description: "Ideation Station is a concept and experimentation environment for prototyping ideas, interfaces, and design-forward digital products. It exists to keep the creative process fast and the output honest.",
       sections: [
         {
           title: "The Problem",
-          content: "Chess fans had no intuitive way to follow live tournaments. Existing platforms were clunky, outdated, or shut down entirely. Serious players and fans needed something that felt natural. Swipe between games, pin favorites, search any player or event instantly.",
+          content: "Good ideas stall when the path from concept to prototype is too long. Ideation Station compresses that gap—creating a dedicated space where exploration is the point and nothing needs to be production-ready to be valuable.",
         },
         {
-          title: "What We Built",
-          content: "We designed the entire product from zero. Clean interface. Real-time game tracking. Engine evaluation. Complete player stats and head-to-head records. Everything works exactly how you'd expect it to. No learning curve.",
+          title: "What We Build",
+          content: "Interface prototypes, interaction experiments, visual systems, and product concepts. Some become products. All of them inform what gets built next.",
         },
         {
           title: "The Approach",
-          content: "Every feature had to earn its place. We focused on getting the core experience right. Watching games unfold with precision, following your favorite players, curating your own feed. Simple to use, built for people who actually care about chess.",
-        },
-        {
-          title: "The Impact",
-          content: "Launched on iOS and Android. Averaging 200+ sign-ups daily since launch. Selected as Top 10 finalist in TWIST Gamma Pitch Deck Competition. Growing Discord community. We're still actively building, refining based on user feedback, and shipping new features to make ChessEver the definitive platform for following chess.",
+          content: "Ship the sketch. Learn from it. Refine what matters. The goal is a high volume of honest creative output, not polished work that took too long.",
         },
       ],
-      role: "0-1 Product Experience",
+      role: "Founder, Product & Design",
       links: [
-        { text: "Website", url: "https://chessever.com" },
-        { text: "iOS", url: "https://apps.apple.com/us/app/chessever/id6752567269" },
-        { text: "Android", url: "https://play.google.com/store/apps/details?id=com.chessEver.app" },
+        { text: "Ideation Station", url: "#" },
+      ],
+    },
+    {
+      id: "avantesavante",
+      title: "Avantesavante",
+      funding: null,
+      image: "/images/word-ladder.png",
+      alt: "Avantesavante - Intellectual and educational platform",
+      description: "Avantesavante is an intellectual and educational platform oriented toward keeping pace with software, AI, and structured learning. It is built for people who take their own development seriously.",
+      sections: [
+        {
+          title: "The Premise",
+          content: "The pace of change in software and AI makes deliberate, structured learning a competitive advantage. Avantesavante exists to make that learning organized, honest, and ongoing.",
+        },
+        {
+          title: "What It Covers",
+          content: "Software development, AI systems, product thinking, and the intersections between them. Content is practical and grounded in real work rather than abstracted theory.",
+        },
+        {
+          title: "The Approach",
+          content: "Depth over volume. Every piece of content is meant to leave you better equipped than before, not just informed.",
+        },
+      ],
+      role: "Founder, Content & Platform",
+      links: [
+        { text: "Avantesavante", url: "#" },
+      ],
+    },
+    {
+      id: "enagic",
+      title: "Enagic Distribution",
+      funding: null,
+      image: "/images/growth-spring.jpeg",
+      alt: "Enagic Distribution - Product presentation and distribution",
+      description: "A portfolio business line centered on presenting and distributing Enagic products with a strong emphasis on credibility, education, and informed decision-making. The goal is to make the products speak clearly to the right audience.",
+      sections: [
+        {
+          title: "The Opportunity",
+          content: "Enagic products occupy a premium, health-oriented category that rewards clear communication and trust. Most distribution is undifferentiated. There is a clear opening for a more considered, design-forward approach.",
+        },
+        {
+          title: "The Execution",
+          content: "Presentation-focused materials, educational content, and a distribution approach built on credibility over pressure. The product earns the sale when explained well.",
+        },
+        {
+          title: "The Approach",
+          content: "Lead with education, back it with design. People make better decisions when they understand what they are buying and who they are buying from.",
+        },
+      ],
+      role: "Distributor, Brand & Presentation",
+      links: [
+        { text: "Learn More", url: "#" },
       ],
     },
   ]
