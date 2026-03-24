@@ -87,29 +87,29 @@ export function FeaturedProject() {
       ],
     },
     {
-      id: "enagic",
-      title: "Enagic Distribution",
+      id: "ursubstanz",
+      title: "Ursubstanz",
       funding: null,
-      image: "/images/growth-spring.jpeg",
-      alt: "Enagic Distribution - Product presentation and distribution",
-      description: "A portfolio business line centered on presenting and distributing Enagic products with a strong emphasis on credibility, education, and informed decision-making. The goal is to make the products speak clearly to the right audience.",
+      image: "/images/ursubstanz.png",
+      alt: "Ursubstanz — editorial fashion and brand concept",
+      description: "Ursubstanz is a concept-led fashion and identity study focused on visual language, product framing, and brand atmosphere. The project explores how garment presentation, typography, and composition can work together to create a more distinct and memorable label world.",
       sections: [
         {
-          title: "The Opportunity",
-          content: "Enagic products occupy a premium, health-oriented category that rewards clear communication and trust. Most distribution is undifferentiated. There is a clear opening for a more considered, design-forward approach.",
+          title: "The Premise",
+          content: "The aim was to shape a brand presence that feels deliberate, minimal, and culturally aware — something positioned between editorial presentation and product storytelling. The direction centers on silhouette, symbolism, and art direction as much as it does on clothing itself.",
         },
         {
-          title: "The Execution",
-          content: "Presentation-focused materials, educational content, and a distribution approach built on credibility over pressure. The product earns the sale when explained well.",
+          title: "The Visual Language",
+          content: "Every choice in the identity system is load-bearing. Typeface selection, image crop, spacing, and tone of voice are treated as brand signals rather than decoration. The result is a label world that communicates without over-explaining.",
         },
         {
           title: "The Approach",
-          content: "Lead with education, back it with design. People make better decisions when they understand what they are buying and who they are buying from.",
+          content: "Start from atmosphere, not product. Define what the label feels like before defining what it sells. When the visual logic is strong, the product presentation follows naturally.",
         },
       ],
-      role: "Distributor, Brand & Presentation",
+      role: "Brand Direction, Art Direction, Identity",
       links: [
-        { text: "Learn More", url: "#" },
+        { text: "Ursubstanz", url: "#" },
       ],
     },
   ]
