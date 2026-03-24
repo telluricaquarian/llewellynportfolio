@@ -1,25 +1,13 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { useState } from "react"
-import { ArrowUpRight, Copy, Check } from "lucide-react"
+import { ArrowUpRight } from "lucide-react"
 
 const links = [
   { label: "Instagram", value: "@thethinkingspirit", href: "https://www.instagram.com/thethinkingspirit" },
 ]
 
 export function ContactSection() {
-  const [copied, setCopied] = useState(false)
-  const [showSpotifyEmbed, setShowSpotifyEmbed] = useState(false)
-
-  const copyEmail = () => {
-    navigator.clipboard.writeText("[email placeholder]")
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
-  }
-
-  const easing = [0.2, 0, 0.38, 0.9]
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -27,17 +15,6 @@ export function ContactSection() {
       transition: {
         staggerChildren: 0.02,
         delayChildren: 0.05,
-      },
-    },
-  }
-
-  const itemVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 0.15,
-        ease: easing,
       },
     },
   }
@@ -81,25 +58,6 @@ export function ContactSection() {
                 key={link.label}
                 className="group flex items-center justify-between py-3 md:py-3 border-b border-[#1a1a1a] hover:border-[#404040] transition-colors duration-300 md:pl-4"
               >
-                {link.copyable ? (
-                  <div className="flex items-center gap-2 md:gap-3 min-w-0">
-                    <span className="text-mono text-[#737373] text-xs md:text-sm flex-shrink-0">{link.label}</span>
-                    <span className="text-sm md:text-base text-[#a1a1a1] truncate">
-                      {link.value}
-                    </span>
-                    <button
-                      onClick={copyEmail}
-                      className="text-[#525252] hover:text-[#fafafa] transition-colors duration-300 flex-shrink-0"
-                      aria-label="Copy email"
-                    >
-                      {copied ? (
-                        <Check className="w-4 h-4 text-green-500" />
-                      ) : (
-                        <Copy className="w-4 h-4" />
-                      )}
-                    </button>
-                  </div>
-                ) : (
                   <a
                     href={link.href}
                     target="_blank"
@@ -114,7 +72,6 @@ export function ContactSection() {
                     </span>
                     <ArrowUpRight className="w-4 h-4 text-[#525252] group-hover:text-[#fafafa] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 flex-shrink-0" />
                   </a>
-                )}
               </motion.div>
             ))}
           </div>
