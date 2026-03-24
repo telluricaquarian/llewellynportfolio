@@ -62,10 +62,10 @@ export function FeaturedProject() {
     },
     {
       id: "avantesavante",
-      title: "Avantesavante",
+      title: "Avantsavant",
       funding: null,
-      image: "/images/word-ladder.png",
-      alt: "Avantesavante - Intellectual and educational platform",
+      image: "/images/avantbackground.png",
+      alt: "Avantsavant - Intellectual and educational platform",
       description: "Avantesavante is an intellectual and educational platform oriented toward keeping pace with software, AI, and structured learning. It is built for people who take their own development seriously.",
       sections: [
         {
