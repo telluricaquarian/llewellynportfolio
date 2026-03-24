@@ -45,6 +45,17 @@ const TICKER = [
   "PROTOTYPE", "LOGIC", "RENDER", "ABSTRACT",
 ]
 
+// ── Noise layer text (static, very low opacity) ───────────────────────────────
+
+const NOISE_TEXT =
+  "01 10 · ◦ ∿ ≈ ∷ ↯ ↺ ∞ ◌ ⟩ ⟨ ▪ ○ ≋ · 00 11 01 10 ∿ ≈ ∷ ↯ ↺ ∞ ◌ ⟩ ⟨ ▪ ≋ 10 01 11 00 " +
+  "01 10 · ◦ ∿ ≈ ∷ ↯ ↺ ∞ ◌ ⟩ ⟨ ▪ ○ ≋ · 00 11 01 10 ∿ ≈ ∷ ↯ ↺ ∞ ◌ ⟩ ⟨ ▪ ≋ 10 01 11 00 " +
+  "· ◦ ∿ ≈ 01 10 ∷ ↯ ↺ ∞ ◌ ○ ≋ 00 11 10 · ◦ ∿ ≈ ∷ ↯ ↺ ∞ ◌ ⟩ ⟨ ▪ ≋ 10 01 11 00 01 10 " +
+  "01 10 · ◦ ∿ ≈ ∷ ↯ ↺ ∞ ◌ ⟩ ⟨ ▪ ○ ≋ · 00 11 01 10 ∿ ≈ ∷ ↯ ↺ ∞ ◌ ⟩ ⟨ ▪ ≋ 10 01 11 00 " +
+  "· ◦ ∿ ≈ 01 10 ∷ ↯ ↺ ∞ ◌ ○ ≋ 00 11 10 · ◦ ∿ ≈ ∷ ↯ ↺ ∞ ◌ ⟩ ⟨ ▪ ≋ 10 01 11 00 01 10 " +
+  "01 10 · ◦ ∿ ≈ ∷ ↯ ↺ ∞ ◌ ⟩ ⟨ ▪ ○ ≋ · 00 11 01 10 ∿ ≈ ∷ ↯ ↺ ∞ ◌ ⟩ ⟨ ▪ ≋ 10 01 11 00 " +
+  "· ◦ ∿ ≈ 01 10 ∷ ↯ ↺ ∞ ◌ ○ ≋ 00 11 10 · ◦ ∿ ≈ ∷ ↯ ↺ ∞ ◌ ⟩ ⟨ ▪ ≋ 10 01 11 00 01 10 "
+
 // ─────────────────────────────────────────────────────────────────────────────
 
 export function IdeationStationPreview() {
@@ -212,6 +223,46 @@ export function IdeationStationPreview() {
             ))}
           </motion.div>
         </div>
+      </div>
+
+      {/* ── Noise layer: static chars at very low opacity ──────────────────── */}
+      <div
+        className="absolute inset-0 z-10 pointer-events-none overflow-hidden"
+        aria-hidden="true"
+      >
+        <div
+          className="font-mono text-white text-[7px] leading-[11px] tracking-widest break-all p-3 w-full h-full"
+          style={{ opacity: 0.06 }}
+        >
+          {NOISE_TEXT}
+        </div>
+      </div>
+
+      {/* ── Typographic overlay: "Ideation / Station" ──────────────────────── */}
+      <div
+        className="absolute inset-0 z-20 pointer-events-none flex flex-col items-center justify-center gap-0"
+        aria-hidden="true"
+      >
+        {(["Ideation", "Station"] as const).map((word) => (
+          <span
+            key={word}
+            className="font-mono font-light leading-none tracking-tighter block text-4xl sm:text-5xl md:text-6xl"
+            style={{
+              background: [
+                "repeating-linear-gradient(180deg,",
+                "  transparent 0px, transparent 2px,",
+                "  rgba(0,0,0,0.22) 2px, rgba(0,0,0,0.22) 3px",
+                "),",
+                "linear-gradient(180deg, #ffffff 0%, #9a9a9a 100%)",
+              ].join(" "),
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
+          >
+            {word}
+          </span>
+        ))}
       </div>
     </div>
   )
