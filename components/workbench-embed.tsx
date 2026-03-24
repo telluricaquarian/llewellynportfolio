@@ -41,8 +41,9 @@ export function WorkbenchEmbed() {
           className="relative group"
         >
           <div className="relative w-full h-[520px] rounded-xl overflow-hidden border border-white/10 bg-black">
+            {/* If still showing placeholder, replace src with the exact value from Figma's "Copy embed code" dialog */}
             <iframe
-              src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/7epMMjqEYLXxHSEfxa5POC/Lew-s-Work-Station?node-id=0-1"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F7epMMjqEYLXxHSEfxa5POC%2FLew-s-Work-Station%3Fnode-id%3D0-1"
               allowFullScreen
               className="w-full h-full border-0"
             />
