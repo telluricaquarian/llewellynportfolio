@@ -1,32 +1,9 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { useState, useEffect } from "react"
 import { ExternalLink } from "lucide-react"
 
 export function WorkbenchEmbed() {
-  const [isLoaded, setIsLoaded] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
-
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth < 768)
-    checkMobile()
-    window.addEventListener("resize", checkMobile)
-
-    // DNS prefetch and preconnect for faster iframe loading
-    const prefetch = document.createElement("link")
-    prefetch.rel = "dns-prefetch"
-    prefetch.href = "https://nacre-quake-50137672.figma.site"
-    
-    const preconnect = document.createElement("link")
-    preconnect.rel = "preconnect"
-    preconnect.href = "https://nacre-quake-50137672.figma.site"
-    
-    document.head.appendChild(prefetch)
-    document.head.appendChild(preconnect)
-
-    return () => window.removeEventListener("resize", checkMobile)
-  }, [])
 
   return (
     <motion.section
@@ -63,42 +40,11 @@ export function WorkbenchEmbed() {
           transition={{ duration: 0.2, ease: [0.2, 0, 0.38, 0.9] }}
           className="relative group"
         >
-          {/* Minimal loading indicator */}
-          {!isLoaded && (
-            <div className="absolute inset-0 bg-[#0a0a0a] rounded-lg z-20 flex items-center justify-center pointer-events-none">
-              <motion.div
-                initial={{ opacity: 0.5 }}
-                animate={{ opacity: 0.3 }}
-                transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
-                className="w-2 h-2 bg-[#525252] rounded-full"
-              />
-            </div>
-          )}
-
-          <div 
-            className="relative w-full bg-[#0a0a0a] border border-[#2a2a2a] rounded-lg overflow-hidden group-hover:border-[#404040] transition-colors duration-300 will-change-colors"
-            style={{ 
-              height: isMobile ? "auto" : "100%",
-              aspectRatio: isMobile ? "16 / 10" : "16 / 9",
-              minHeight: isMobile ? "400px" : undefined,
-              WebkitOverflowScrolling: "touch",
-              touchAction: "manipulation",
-            }}
-          >
+          <div className="relative w-full h-[520px] rounded-xl overflow-hidden border border-white/10 bg-black">
             <iframe
-              src="https://nacre-quake-50137672.figma.site"
-              title="WorkBench - Interactive Design Canvas"
+              src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/7epMMjqEYLXxHSEfxa5POC/Lew-s-Work-Station?node-id=0-1"
+              allowFullScreen
               className="w-full h-full border-0"
-              onLoad={() => setIsLoaded(true)}
-              allow="fullscreen"
-              loading="lazy"
-              style={{
-                backgroundColor: "#000000",
-                opacity: isLoaded ? 1 : 0,
-                transition: "opacity 0.3s cubic-bezier(0.25, 0.1, 0.25, 1.0)",
-                pointerEvents: "auto",
-                WebkitOverflowScrolling: "touch",
-              }}
             />
           </div>
 
@@ -114,7 +60,7 @@ export function WorkbenchEmbed() {
           className="mt-6 md:mt-8"
         >
           <a
-            href="https://nacre-quake-50137672.figma.site"
+            href="https://www.figma.com/design/7epMMjqEYLXxHSEfxa5POC/Lew-s-Work-Station?node-id=0-1"
             target="_blank"
             rel="noopener noreferrer"
             className="group/cta inline-flex items-center gap-2.5 px-4 py-2.5 text-sm font-medium text-[#fafafa] hover:text-white transition-all duration-300 ease-out hover:gap-3.5 active:scale-95 md:active:scale-100"
