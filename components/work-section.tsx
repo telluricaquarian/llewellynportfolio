@@ -6,39 +6,10 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 0,
-    title: "Agentic Workflow Builder",
-    description: "Automated multi-step agent pipeline",
-    link: "#",
-  },
-  {
-    id: 1,
-    title: "Portfolio Design System",
-    description: "Component library and visual language",
-    link: "#",
-  },
-  {
-    id: 2,
-    title: "Brand Concept Explorer",
-    description: "Identity and mark exploration",
-    link: "#",
-  },
-  {
-    id: 3,
-    title: "Web Interaction Lab",
-    description: "Motion and interface experiments",
-    link: "#",
-  },
-  {
-    id: 4,
-    title: "Product Demo Scaffold",
-    description: "Rapid prototype framework",
-    link: "#",
-  },
-  {
-    id: 5,
-    title: "AI Tooling Sandbox",
-    description: "LLM integration experiments",
-    link: "#",
+    title: "Negentropic Intelligence / Agentic Workflows",
+    description: "Agentic systems and workflow intelligence",
+    link: "https://negentropic-agentic-workflows.vercel.app",
+    logo: "/images/NI.png",
   },
 ]
 
@@ -113,6 +84,13 @@ export function WorkSection() {
                     className="flex flex-col md:flex-row md:items-center md:justify-between md:pl-4"
                   >
                     <div className="flex items-start gap-2 md:items-center md:gap-4 flex-wrap">
+                      {project.logo && (
+                        <img
+                          src={project.logo}
+                          alt=""
+                          className="w-5 h-5 object-contain rounded-sm flex-shrink-0 opacity-70"
+                        />
+                      )}
                       <span className="text-lg md:text-xl lg:text-2xl font-normal text-[#fafafa] group-hover:text-white transition-colors duration-300 flex-shrink-0">
                         {project.title}
                       </span>

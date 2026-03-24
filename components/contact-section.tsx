@@ -5,14 +5,7 @@ import { useState } from "react"
 import { ArrowUpRight, Copy, Check } from "lucide-react"
 
 const links = [
-  { label: "Email", value: "[email placeholder]", href: "#", copyable: true },
-  { label: "X", value: "@[handle]", href: "#" },
-  { label: "GitHub", value: "[username]", href: "#" },
-  { label: "LinkedIn", value: "llewellyn-fisher", href: "#" },
-  { label: "Areculateir", value: "areculateir.com", href: "#" },
-  { label: "Ideation Station", value: "[link placeholder]", href: "#" },
-  { label: "Avantesavante", value: "[link placeholder]", href: "#" },
-  { label: "Enagic", value: "[link placeholder]", href: "#" },
+  { label: "Instagram", value: "@thethinkingspirit", href: "https://www.instagram.com/thethinkingspirit" },
 ]
 
 export function ContactSection() {
