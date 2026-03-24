@@ -8,11 +8,6 @@ export const metadata: Metadata = {
   title: "Llewellyn Fisher – Designer & Product Builder",
   description: "Crafting digital experiences and building products that matter. Designer and builder focused on creating 0–1 experiences with thoughtful design.",
   metadataBase: new URL("https://damilareoo.xyz"),
-  icons: {
-    icon: "/lp.png",
-    shortcut: "/lp.png",
-    apple: "/lp.png",
-  },
   openGraph: {
     title: "Llewellyn Fisher – Designer & Product Builder",
     description: "Crafting digital experiences and building products that matter. Designer and builder focused on creating 0–1 experiences with thoughtful design.",
@@ -52,8 +47,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/lp.png" type="image/png" />
-
         <meta property="og:image" content="https://damilareoo.xyz/images/000.png" />
         <meta property="og:image:url" content="https://damilareoo.xyz/images/000.png" />
         <meta property="og:image:secure_url" content="https://damilareoo.xyz/images/000.png" />
