@@ -43,7 +43,7 @@ export function WorkbenchEmbed() {
           <div className="relative w-full h-[520px] rounded-xl overflow-hidden border border-white/10 bg-black">
             {/* If still showing placeholder, replace src with the exact value from Figma's "Copy embed code" dialog */}
             <iframe
-              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2F7epMMjqEYLXxHSEfxa5POC%2FLew-s-Work-Station%3Fnode-id%3D0-1"
+              src="https://www.figma.com/proto/RQ8hnPJ0wS2PMNeHqaO2kE/Team-Library?page-id=0%3A1&node-id=1-2&p=f&viewport=109%2C366%2C0.4&t=3FCdY3neu34Yii4S-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A2"
               allowFullScreen
               className="w-full h-full border-0"
             />
