@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { ExternalLink } from "lucide-react"
 import Image from "next/image"
+import { IdeationStationPreview } from "./previews/ideation-station-preview"
 
 export function FeaturedProject() {
   const projects = [
@@ -36,6 +37,7 @@ export function FeaturedProject() {
       id: "ideation-station",
       title: "Ideation Station",
       funding: null,
+      previewType: "ideationBento",
       image: "/images/sylvan-featured.gif",
       alt: "Ideation Station - Concept and experimentation environment",
       description: "Ideation Station is a concept and experimentation environment for prototyping ideas, interfaces, and design-forward digital products. It exists to keep the creative process fast and the output honest.",
@@ -152,12 +154,16 @@ export function FeaturedProject() {
                 {/* Featured Image */}
                 <div className="group relative mb-8 md:mb-12 rounded-lg overflow-hidden bg-[#0a0a0a] border border-[#1a1a1a] hover:border-[#404040] transition-all duration-300">
                   <div className="relative w-full aspect-video md:aspect-[16/9]">
-                    <img
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.alt}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
+                    {project.previewType === "ideationBento" ? (
+                      <IdeationStationPreview />
+                    ) : (
+                      <img
+                        src={project.image || "/placeholder.svg"}
+                        alt={project.alt}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+                    )}
                   </div>
 
                   <div className="absolute left-0 top-1/2 -translate-y-1/2 w-0 group-hover:w-3 h-px bg-[#525252] transition-all duration-300 hidden md:block" />
