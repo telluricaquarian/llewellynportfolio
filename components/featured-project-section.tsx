@@ -90,7 +90,7 @@ export function FeaturedProject() {
       id: "ursubstanz",
       title: "Ursubstanz",
       funding: null,
-      image: "/images/ursubstanz.png",
+      image: "/ursubstanz.png",
       alt: "Ursubstanz — editorial fashion and brand concept",
       description: "Ursubstanz is a concept-led fashion and identity study focused on visual language, product framing, and brand atmosphere. The project explores how garment presentation, typography, and composition can work together to create a more distinct and memorable label world.",
       sections: [
