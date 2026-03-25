@@ -92,22 +92,22 @@ export function FeaturedProject() {
       funding: null,
       image: "/ursubstanz.png",
       alt: "Ursubstanz — editorial fashion and brand concept",
-      description: "Ursubstanz is a concept-led fashion and identity study focused on visual language, product framing, and brand atmosphere. The project explores how garment presentation, typography, and composition can work together to create a more distinct and memorable label world.",
+      description: "Ursubstanz. A label operating at the intersection of apparel and holistic supplementation. The full scope is not disclosed — what's visible is intentional, what isn't is deliberate.",
       sections: [
         {
           title: "The Premise",
-          content: "The aim was to shape a brand presence that feels deliberate, minimal, and culturally aware — something positioned between editorial presentation and product storytelling. The direction centers on silhouette, symbolism, and art direction as much as it does on clothing itself.",
+          content: "Some things are built to be worn. Others to be consumed. This explores both — quietly.",
         },
         {
           title: "The Visual Language",
-          content: "Every choice in the identity system is load-bearing. Typeface selection, image crop, spacing, and tone of voice are treated as brand signals rather than decoration. The result is a label world that communicates without over-explaining.",
+          content: "Identity work. The kind that doesn't over-explain itself.",
         },
         {
           title: "The Approach",
-          content: "Start from atmosphere, not product. Define what the label feels like before defining what it sells. When the visual logic is strong, the product presentation follows naturally.",
+          content: "Atmospheric by design. Details available on a need-to-know basis.",
         },
       ],
-      role: "Brand Direction, Art Direction, Identity",
+      role: "Apparel & Holistic Supplements — [CLASSIFIED]",
       links: [
         { text: "Ursubstanz", url: "#" },
       ],
