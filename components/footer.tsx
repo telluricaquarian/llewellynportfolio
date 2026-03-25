@@ -79,7 +79,7 @@ export function Footer() {
                       transition={{ delay: 0.05, duration: 0.1 }}
                     >
                       <iframe
-                        src="https://open.spotify.com/embed/playlist/2WqAscMqGj6fGkjaYN9jsY?utm_source=generator&theme=0"
+                        src="https://open.spotify.com/embed/playlist/0iWbS25xUt3Z1O3LajFolc?utm_source=generator&theme=0"
                         width="100%"
                         height="352"
                         frameBorder="0"
