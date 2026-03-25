@@ -3,6 +3,7 @@ import type { Metadata } from "next"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/react"
 import { Suspense } from "react"
+import { ServicesSidebar } from "@/components/services-sidebar"
 
 export const metadata: Metadata = {
   title: "Llewellyn Fisher – Designer & Product Builder",
@@ -71,7 +72,10 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         <Suspense fallback={<div>Loading...</div>}>
-          {children}
+          <div className="flex min-h-screen">
+            <ServicesSidebar />
+            <main className="flex-1 min-w-0">{children}</main>
+          </div>
           <Analytics />
         </Suspense>
       </body>
