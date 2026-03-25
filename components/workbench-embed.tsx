@@ -223,6 +223,33 @@ export function WorkbenchEmbed() {
 
             </div>{/* end canvas workspace */}
 
+            {/* ── Typographic overlay: "Llewellyn's Workbench" ─────────── */}
+            <div
+              className="absolute inset-0 z-20 pointer-events-none flex flex-col items-center justify-center gap-0"
+              aria-hidden="true"
+            >
+              {(["Llewellyn's", "Workbench"] as const).map((word) => (
+                <span
+                  key={word}
+                  className="font-mono font-light leading-none tracking-tighter block text-4xl sm:text-5xl md:text-6xl"
+                  style={{
+                    background: [
+                      "repeating-linear-gradient(180deg,",
+                      "  transparent 0px, transparent 2px,",
+                      "  rgba(0,0,0,0.22) 2px, rgba(0,0,0,0.22) 3px",
+                      "),",
+                      "linear-gradient(180deg, #ffffff 0%, #9a9a9a 100%)",
+                    ].join(" "),
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
+                >
+                  {word}
+                </span>
+              ))}
+            </div>
+
             {/* ── Interface controls — top overlay ─────────────────────── */}
             <motion.div
               initial={{ opacity: 0 }}
