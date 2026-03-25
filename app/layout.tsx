@@ -72,7 +72,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased">
         <Suspense fallback={<div>Loading...</div>}>
-          <div className="flex min-h-screen">
+          <div className="flex min-h-screen gap-0">
             <ServicesSidebar />
             <main className="flex-1 min-w-0">{children}</main>
           </div>
