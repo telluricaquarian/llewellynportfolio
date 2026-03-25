@@ -66,11 +66,11 @@ export function FeaturedProject() {
       funding: null,
       image: "/images/avantbackground.png",
       alt: "Avantsavant - Intellectual and educational platform",
-      description: "Avantesavante is an intellectual and educational platform oriented toward keeping pace with software, AI, and structured learning. It is built for people who take their own development seriously.",
+      description: "Avantesavant is an intellectual and educational platform oriented toward keeping pace with software, AI, and structured learning. It is built for people who take their own development seriously.",
       sections: [
         {
           title: "The Premise",
-          content: "The pace of change in software and AI makes deliberate, structured learning a competitive advantage. Avantesavante exists to make that learning organized, honest, and ongoing.",
+          content: "The pace of change in software and AI makes deliberate, structured learning a competitive advantage. Avantesavant exists to make that learning organized, honest, and ongoing.",
         },
         {
           title: "What It Covers",
@@ -83,7 +83,7 @@ export function FeaturedProject() {
       ],
       role: "Founder, Content & Platform",
       links: [
-        { text: "Avantesavante", url: "#" },
+        { text: "Avantesavant", url: "#" },
       ],
     },
     {
