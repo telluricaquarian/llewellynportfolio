@@ -1,3 +1,21 @@
+"use client"
+
+import { useState, useEffect } from "react"
+
+const CLOCKS = [
+  { label: "Sydney Time", tz: "Australia/Sydney" },
+  { label: "Los Angeles Time", tz: "America/Los_Angeles" },
+]
+
+function useTick() {
+  const [now, setNow] = useState<Date | null>(null)
+  useEffect(() => {
+    setNow(new Date())
+    const id = setInterval(() => setNow(new Date()), 1000)
+    return () => clearInterval(id)
+  }, [])
+  return now
+}
 
 const services = [
   {
@@ -27,8 +45,30 @@ const services = [
 ]
 
 export function ServicesSidebar() {
+  const now = useTick()
+
   return (
     <aside className="hidden lg:flex flex-col w-[320px] xl:w-[360px] min-h-screen sticky top-0 h-screen border-r border-[#1a1a18] bg-[#0a0a0a] overflow-y-auto flex-shrink-0">
+      {/* Dual clock */}
+      <div className="pt-4 px-7 flex flex-col gap-2.5">
+        {CLOCKS.map(({ label, tz }) => (
+          <div key={tz}>
+            <p className="text-[11px] font-mono text-[#3a3a38]">{label}</p>
+            <p className="text-[11px] text-[#555552]">
+              {now
+                ? now.toLocaleTimeString("en-US", {
+                    timeZone: tz,
+                    hour: "numeric",
+                    minute: "2-digit",
+                    second: "2-digit",
+                    hour12: true,
+                  })
+                : "—"}
+            </p>
+          </div>
+        ))}
+      </div>
+
       {/* Header */}
       <div className="px-6 pt-8 pb-6">
         <img src="/lp.png" alt="Logo" width={40} height={40} style={{ borderRadius: '10px', width: '40px', height: '40px', objectFit: 'cover' }} className="mb-3" />
