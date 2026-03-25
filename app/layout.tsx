@@ -4,6 +4,7 @@ import "./globals.css"
 import { Analytics } from "@vercel/analytics/react"
 import { Suspense } from "react"
 import { ServicesSidebar } from "@/components/services-sidebar"
+import { LiquidMetalButton } from "@/components/ui/liquid-metal-button"
 
 export const metadata: Metadata = {
   title: "Llewellyn Fisher – Designer & Product Builder",
@@ -77,6 +78,9 @@ export default function RootLayout({
             <main className="flex-1 min-w-0">{children}</main>
           </div>
           <Analytics />
+          <div className="fixed bottom-6 right-6 z-50 [&>button]:rounded-xl [&>button]:px-6 [&>button]:py-6">
+            <LiquidMetalButton label="Hire Me" onClick={() => window.location.href = '/contact'} />
+          </div>
         </Suspense>
       </body>
     </html>
