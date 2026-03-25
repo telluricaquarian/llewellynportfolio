@@ -31,7 +31,7 @@ export default function Home() {
         <div className="relative w-full">
           {/* Left border line */}
           <div 
-            className="absolute left-[calc(50%-300px)] sm:left-[calc(50%-350px)] md:left-[calc(50%-450px)] top-0 w-px bg-[#2a2a2a] hidden md:block pointer-events-none"
+            className="absolute left-[calc(50%-300px)] sm:left-[calc(50%-350px)] md:left-[calc(50%-450px)] top-0 w-px bg-[#2a2a2a] hidden pointer-events-none"
             aria-hidden="true"
             style={{ height: '100%' }}
           />
