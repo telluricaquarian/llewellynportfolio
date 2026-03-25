@@ -1,6 +1,3 @@
-"use client"
-
-import { LiquidMetalButton } from "@/components/ui/liquid-metal-button"
 
 const services = [
   {
@@ -53,9 +50,6 @@ export function ServicesSidebar() {
             <p className="text-[10px] italic text-[#2e4a72]">
               {service.note}
             </p>
-            <div className="pt-1">
-              <LiquidMetalButton label={service.cta} onClick={() => window.location.href = service.href} />
-            </div>
           </div>
         ))}
       </div>
