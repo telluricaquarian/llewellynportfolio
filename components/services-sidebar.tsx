@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 
 const services = [
   {
@@ -33,7 +32,7 @@ export function ServicesSidebar() {
     <aside className="hidden lg:flex flex-col w-[320px] xl:w-[360px] min-h-screen sticky top-0 h-screen border-r border-[#1a1a18] bg-[#0a0a0a] overflow-y-auto flex-shrink-0">
       {/* Header */}
       <div className="px-6 pt-8 pb-6">
-        <Image src="/images/lp.png" alt="Llewellyn Fisher" width={40} height={40} className="mb-3" />
+        <img src="/images/lp.png" alt="Llewellyn Fisher" width={40} height={40} className="rounded-lg mb-3" />
         <p className="text-[11px] italic text-[#3a3a38] leading-relaxed">
           Services &amp; Products offered
         </p>
