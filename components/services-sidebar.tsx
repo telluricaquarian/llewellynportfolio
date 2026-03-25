@@ -1,4 +1,6 @@
-import Link from "next/link"
+"use client"
+
+import { LiquidMetalButton } from "@/components/ui/liquid-metal-button"
 
 const services = [
   {
@@ -52,16 +54,7 @@ export function ServicesSidebar() {
               {service.note}
             </p>
             <div className="pt-1">
-              <Link
-                href={service.href}
-                className={
-                  service.variant === "blue"
-                    ? "inline-flex items-center px-3 py-1.5 text-[10px] font-medium rounded border text-[#8ab4e8] border-[#1e3a6a] bg-[#080e18] hover:bg-[#0c1420] transition-colors duration-200"
-                    : "inline-flex items-center px-3 py-1.5 text-[10px] font-medium rounded border text-[#d4a84a] border-[#4a2e08] bg-[#140d02] hover:bg-[#1c1103] transition-colors duration-200"
-                }
-              >
-                {service.cta}
-              </Link>
+              <LiquidMetalButton label={service.cta} onClick={() => window.location.href = service.href} />
             </div>
           </div>
         ))}
