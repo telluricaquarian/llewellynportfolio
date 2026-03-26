@@ -98,17 +98,20 @@ export function HireMeModal({ isOpen, onClose }: HireMeModalProps) {
           <p className="text-white italic text-sm">Select Product or Service:</p>
 
           {/* Dropdown */}
-          <select
-            value={selected}
-            onChange={(e) => setSelected(Number(e.target.value))}
-            className="bg-transparent border border-[#333] rounded-full pl-4 pr-10 py-2 text-white text-sm focus:outline-none focus:border-[#555] cursor-pointer"
-          >
-            {SERVICES.map((s, i) => (
-              <option key={s.label} value={i} className="bg-[#0e0e0e]">
-                {s.label}
-              </option>
-            ))}
-          </select>
+          <div className="relative">
+            <select
+              value={selected}
+              onChange={(e) => setSelected(Number(e.target.value))}
+              className="w-full appearance-none bg-transparent border border-[#333] rounded-full pl-4 pr-10 py-2 text-white text-sm focus:outline-none focus:border-[#555] cursor-pointer"
+            >
+              {SERVICES.map((s, i) => (
+                <option key={s.label} value={i} className="bg-[#0e0e0e]">
+                  {s.label}
+                </option>
+              ))}
+            </select>
+            <span className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-[#555] text-xs">▾</span>
+          </div>
 
           {/* Dynamic description */}
           <p className="text-[#555552] text-xs leading-relaxed">{service.description}</p>
