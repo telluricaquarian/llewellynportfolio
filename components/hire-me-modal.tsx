@@ -69,7 +69,7 @@ export function HireMeModal({ isOpen, onClose }: HireMeModalProps) {
         </button>
 
         {/* Left panel — media */}
-        <div className="w-full md:w-1/2 bg-[#080808] flex items-center justify-center min-h-[220px] md:min-h-full">
+        <div className="w-full md:w-1/2 bg-[#080808] flex items-center justify-center h-[40vh] md:h-auto max-h-[40vh] md:max-h-full overflow-hidden">
           {service.media.type === "video" ? (
             <video
               key={service.media.src}
@@ -77,8 +77,7 @@ export function HireMeModal({ isOpen, onClose }: HireMeModalProps) {
               loop
               muted
               playsInline
-              className="w-full h-full object-contain"
-              style={{ maxHeight: "480px" }}
+              className="w-full h-full object-cover"
             >
               <source src={service.media.src} />
             </video>
@@ -87,8 +86,7 @@ export function HireMeModal({ isOpen, onClose }: HireMeModalProps) {
               key={service.media.src}
               src={service.media.src}
               alt={service.label}
-              className="w-full h-full object-contain"
-              style={{ maxHeight: "480px" }}
+              className="w-full h-full object-cover"
             />
           )}
         </div>
