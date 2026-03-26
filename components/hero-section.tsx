@@ -36,7 +36,7 @@ export const HeroSection = () => {
           <motion.div variants={itemVariants} className="relative">
             <p className="text-base md:text-lg text-[#a1a1a1] max-w-2xl leading-relaxed text-balance">
               Builder focused on product systems, digital experiences, and agentic workflows. Founder of Areculateir,
-              Ideation Station, and Avantesavant, with ongoing work spanning design, web development, and Enagic
+              Ideation Station, and Avantsavant, with ongoing work spanning design, web development, and Enagic
               distribution.
             </p>
           </motion.div>
