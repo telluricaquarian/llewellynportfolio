@@ -101,7 +101,7 @@ export function HireMeModal({ isOpen, onClose }: HireMeModalProps) {
           <select
             value={selected}
             onChange={(e) => setSelected(Number(e.target.value))}
-            className="bg-transparent border border-[#333] rounded-full px-4 py-2 text-white text-sm focus:outline-none focus:border-[#555] cursor-pointer"
+            className="bg-transparent border border-[#333] rounded-full pl-4 pr-10 py-2 text-white text-sm focus:outline-none focus:border-[#555] cursor-pointer"
           >
             {SERVICES.map((s, i) => (
               <option key={s.label} value={i} className="bg-[#0e0e0e]">
