@@ -1,0 +1,38 @@
+{
+  "updated_at": "2026-05-26T10:34:03Z",
+  "updated_at_local": "2026-05-26 20:34 AEST",
+  "stack": "Hermes + Claude Sonnet 4.5",
+  "agents": [
+    {
+      "id": "lead-gen",
+      "name": "Lead Gen",
+      "schedule": "daily · 6:00am AEST",
+      "status": "ok",
+      "last_run": "2026-05-26T20:20:44.894809+10:00",
+      "summary": "~160 prospects · ~10 added today",
+      "mode": "agent"
+    },
+    {
+      "id": "ai-digest",
+      "name": "AI Digest",
+      "schedule": "daily · 5:00am AEST",
+      "status": "unknown",
+      "last_run": "",
+      "summary": "~10 sources scanned",
+      "mode": "script"
+    },
+    {
+      "id": "watchdog",
+      "name": "Watchdog",
+      "schedule": "every 15 min",
+      "status": "ok",
+      "last_run": "2026-05-26T20:31:11.252134+10:00",
+      "summary": "system health check",
+      "mode": "script"
+    }
+  ],
+  "totals": {
+    "agents_live": 3,
+    "skills_loaded": 2
+  }
+}

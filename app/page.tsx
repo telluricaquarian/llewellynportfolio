@@ -9,6 +9,7 @@ import { ContactSection } from "@/components/contact-section"
 import { WorkbenchEmbed } from "@/components/workbench-embed"
 import { Footer } from "@/components/footer"
 import { Navbar } from "@/components/navbar"
+import NowRunning from "@/components/now-running"
 import { SmoothScrollProvider, SectionTransition } from "@/components/smooth-scroll-provider"
 
 export default function Home() {
@@ -67,6 +68,8 @@ export default function Home() {
                 <ContactSection />
               </SectionTransition>
             </section>
+
+            <NowRunning />
 
             <section id="workbench" ref={workbenchRef} aria-label="WorkBench design tool" className="scroll-section">
               <SectionTransition id="workbench">
